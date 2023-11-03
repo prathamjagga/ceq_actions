@@ -1,0 +1,14 @@
+{
+  "name": "api_and_browser_monitors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "file1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^21.1.0"
+  }
+}
