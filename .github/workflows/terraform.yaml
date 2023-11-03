@@ -25,12 +25,4 @@ jobs:
         run: terraform init
 
       - name: Apply or Destroy
-        run: |
-          if [ ${{ github.event.inputs.action }} == 'apply' ]; then
-            terraform apply -auto-approve
-          elif [ ${{ github.event.inputs.action }} == 'destroy' ]; then
-            terraform destroy -auto-approve
-          else
-            echo "Invalid action specified."
-            exit 1
-          fi
+        run: terraform ${{ github.event.inputs.action }} -auto-approve
