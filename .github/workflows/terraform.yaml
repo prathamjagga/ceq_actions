@@ -6,7 +6,7 @@ on:
       action:
         description: "Apply or Destroy"
         required: true
-        default: "apply" # You can change the default action
+        default: "apply" 
 
 jobs:
   terraform:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
         with:
-          terraform_version: 1.0.0 # Change to your desired Terraform version
+          terraform_version: 1.0.0 
 
       - name: Terraform Init
         run: terraform init
